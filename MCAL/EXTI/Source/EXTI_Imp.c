@@ -41,7 +41,7 @@ void EXTI0_voidInit(void){
 #endif
 }
 void EXTI1_voidInit(void){
-	/*Check sense control of Pin INT0*/
+	/*Check sense control of Pin INT1*/
 #if 	INT1_SENSE == EXTI_LOW
 
 	CLR_BIT(EXTI_MCUCR,EXTI_MCUCR_ISC10);
@@ -67,7 +67,7 @@ void EXTI1_voidInit(void){
 #endif
 }
 void EXTI2_voidInit(void){
-	/*Check sense control of Pin INT0*/
+	/*Check sense control of Pin INT2*/
 #if 	INT2_SENSE == EXTI_FALLING
 	CLR_BIT(EXTI_MCUCSR,EXTI_MCUCSR_ISC2);
 

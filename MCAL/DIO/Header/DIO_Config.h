@@ -10,7 +10,7 @@
 
 #define DIO_PINA0		Input
 #define DIO_PINA1		Input
-#define DIO_PINA2		Output
+#define DIO_PINA2		Input
 #define DIO_PINA3		Output
 #define DIO_PINA4		Output
 #define DIO_PINA5		Output
@@ -19,17 +19,17 @@
 
 #define DIO_PINB0		Output
 #define DIO_PINB1		Output
-#define DIO_PINB2		Output
+#define DIO_PINB2		Input
 #define DIO_PINB3		Output
 #define DIO_PINB4		Output
 #define DIO_PINB5		Output
 #define DIO_PINB6		Output
 #define DIO_PINB7		Output
 
-#define DIO_PINC0		Input
-#define DIO_PINC1		Input
-#define DIO_PINC2		Input
-#define DIO_PINC3		Input
+#define DIO_PINC0		Output
+#define DIO_PINC1		Output
+#define DIO_PINC2		Output
+#define DIO_PINC3		Output
 #define DIO_PINC4		Input
 #define DIO_PINC5		Output
 #define DIO_PINC6		Input

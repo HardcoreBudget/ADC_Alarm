@@ -54,7 +54,7 @@ d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_6
 Allocating common symbols
 Common symbol       size              file
 
-readings            0x8               ./App/main.o
+readings            0xc               ./App/main.o
 
 Memory Configuration
 
@@ -172,7 +172,7 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x529e
+.text           0x00000000     0x5360
  *(.vectors)
  .vectors       0x00000000       0x54 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -486,39 +486,42 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
  .text.KPD_u8GetPressedKey
                 0x00004ca6      0x172 ./HAL/Keypad/Source/Keypad_Imp.o
                 0x00004ca6                KPD_u8GetPressedKey
- .text.main     0x00004e18      0x230 ./App/main.o
+ .text.main     0x00004e18      0x2a8 ./App/main.o
                 0x00004e18                main
  .text.ADC_Chain
-                0x00005048       0x66 ./App/main.o
-                0x00005048                ADC_Chain
+                0x000050c0       0x66 ./App/main.o
+                0x000050c0                ADC_Chain
  .text.LDR_Alarm
-                0x000050ae       0x4a ./App/main.o
-                0x000050ae                LDR_Alarm
+                0x00005126       0x4a ./App/main.o
+                0x00005126                LDR_Alarm
  .text.LM35_Alarm
-                0x000050f8       0x4a ./App/main.o
-                0x000050f8                LM35_Alarm
- .text.libgcc   0x00005142       0x3e d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
-                0x00005142                __mulsi3
- .text.libgcc   0x00005180       0x1a d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
-                0x00005180                __divmodqi4
- .text.libgcc   0x0000519a       0x36 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
-                0x0000519a                __divmodsi4
- .text.libgcc   0x000051d0        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x000051d0        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x000051d0        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x000051d0       0x18 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
-                0x000051d0                __udivmodqi4
- .text.libgcc   0x000051e8       0x44 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
-                0x000051e8                __udivmodsi4
- .text.libgcc   0x0000522c       0x38 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x0000522c                __prologue_saves__
- .text.libgcc   0x00005264       0x36 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00005264                __epilogue_restores__
-                0x0000529a                . = ALIGN (0x2)
+                0x00005170       0x4a ./App/main.o
+                0x00005170                LM35_Alarm
+ .text.POT_Alarm
+                0x000051ba       0x4a ./App/main.o
+                0x000051ba                POT_Alarm
+ .text.libgcc   0x00005204       0x3e d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x00005204                __mulsi3
+ .text.libgcc   0x00005242       0x1a d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
+                0x00005242                __divmodqi4
+ .text.libgcc   0x0000525c       0x36 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x0000525c                __divmodsi4
+ .text.libgcc   0x00005292        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00005292        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00005292        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00005292       0x18 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                0x00005292                __udivmodqi4
+ .text.libgcc   0x000052aa       0x44 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x000052aa                __udivmodsi4
+ .text.libgcc   0x000052ee       0x38 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x000052ee                __prologue_saves__
+ .text.libgcc   0x00005326       0x36 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00005326                __epilogue_restores__
+                0x0000535c                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000529a        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x0000529a                exit
-                0x0000529a                _exit
+ .fini9         0x0000535c        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x0000535c                exit
+                0x0000535c                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -537,11 +540,11 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000529a        0x4 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000535c        0x4 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000529e                _etext = .
+                0x00005360                _etext = .
 
-.data           0x00800060      0x166 load address 0x0000529e
+.data           0x00800060      0x16a load address 0x00005360
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -552,126 +555,126 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
  .data          0x00800060        0x0 ./HAL/SevSeg/Source/SevSeg_Imp.o
  .data          0x00800060        0x0 ./HAL/LCD/Source/LCD_Imp.o
  .data          0x00800060        0x0 ./HAL/Keypad/Source/Keypad_Imp.o
- .data          0x00800060        0xd ./App/main.o
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .data          0x0080006d        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .data          0x0080006d        0x8 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
-                0x0080006d                __thenan_sf
- .data          0x00800075        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
- .data          0x00800075        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
- .data          0x00800075        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
- .data          0x00800075        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .data          0x00800075        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .data          0x00800075        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
- .data          0x00800075        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .data          0x00800075        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .data          0x00800075        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
- .data          0x00800075      0x100 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
-                0x00800075                __clz_tab
+ .data          0x00800060       0x11 ./App/main.o
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .data          0x00800071        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .data          0x00800071        0x8 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+                0x00800071                __thenan_sf
+ .data          0x00800079        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .data          0x00800079        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .data          0x00800079        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800079        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .data          0x00800079        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .data          0x00800079        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .data          0x00800079        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .data          0x00800079        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .data          0x00800079        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .data          0x00800079      0x100 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+                0x00800079                __clz_tab
  *(.data*)
- .data.Vref     0x00800175        0x4 ./MCAL/ADC/Source/ADC_Imp.o
-                0x00800175                Vref
+ .data.Vref     0x00800179        0x4 ./MCAL/ADC/Source/ADC_Imp.o
+                0x00800179                Vref
  .data.MulBCDArr
-                0x00800179        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
-                0x00800179                MulBCDArr
+                0x0080017d        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
+                0x0080017d                MulBCDArr
  *(.rodata)
  *(.rodata*)
  .rodata.C.0.1313
-                0x00800183        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
+                0x00800187        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
  .rodata.C.1.1326
-                0x0080018d        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
+                0x00800191        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
  .rodata.C.3.1354
-                0x00800197        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
+                0x0080019b        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
  .rodata.C.6.1381
-                0x008001a1        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
+                0x008001a5        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
  .rodata.C.9.1440
-                0x008001ab        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
+                0x008001af        0xa ./HAL/SevSeg/Source/SevSeg_Imp.o
  .rodata.C.0.1230
-                0x008001b5       0x10 ./HAL/Keypad/Source/Keypad_Imp.o
+                0x008001b9       0x10 ./HAL/Keypad/Source/Keypad_Imp.o
  *(.gnu.linkonce.d*)
-                0x008001c6                . = ALIGN (0x2)
- *fill*         0x008001c5        0x1 00
-                0x008001c6                _edata = .
-                0x008001c6                PROVIDE (__data_end, .)
+                0x008001ca                . = ALIGN (0x2)
+ *fill*         0x008001c9        0x1 00
+                0x008001ca                _edata = .
+                0x008001ca                PROVIDE (__data_end, .)
 
-.bss            0x008001c6       0x11
-                0x008001c6                PROVIDE (__bss_start, .)
+.bss            0x008001ca       0x15
+                0x008001ca                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
- .bss           0x008001c6        0x0 ./MCAL/GIE/Source/GIE_Imp.o
- .bss           0x008001c6        0x0 ./MCAL/EXTI/Source/EXTI_Imp.o
- .bss           0x008001c6        0x0 ./MCAL/DIO/Source/DIO_Imp.o
- .bss           0x008001c6        0x0 ./MCAL/ADC/Source/ADC_Imp.o
- .bss           0x008001c6        0x0 ./HAL/SevSeg/Source/SevSeg_Imp.o
- .bss           0x008001c6        0x0 ./HAL/LCD/Source/LCD_Imp.o
- .bss           0x008001c6        0x0 ./HAL/Keypad/Source/Keypad_Imp.o
- .bss           0x008001c6        0x0 ./App/main.o
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
- .bss           0x008001c6        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008001ca        0x0 ./MCAL/GIE/Source/GIE_Imp.o
+ .bss           0x008001ca        0x0 ./MCAL/EXTI/Source/EXTI_Imp.o
+ .bss           0x008001ca        0x0 ./MCAL/DIO/Source/DIO_Imp.o
+ .bss           0x008001ca        0x0 ./MCAL/ADC/Source/ADC_Imp.o
+ .bss           0x008001ca        0x0 ./HAL/SevSeg/Source/SevSeg_Imp.o
+ .bss           0x008001ca        0x0 ./HAL/LCD/Source/LCD_Imp.o
+ .bss           0x008001ca        0x0 ./HAL/Keypad/Source/Keypad_Imp.o
+ .bss           0x008001ca        0x0 ./App/main.o
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodqi4.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x008001ca        0x0 d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
  *(.bss*)
  .bss.Global_EXTI0_CallBack
-                0x008001c6        0x2 ./MCAL/EXTI/Source/EXTI_Imp.o
-                0x008001c6                Global_EXTI0_CallBack
- .bss.Global_EXTI1_CallBack
-                0x008001c8        0x2 ./MCAL/EXTI/Source/EXTI_Imp.o
-                0x008001c8                Global_EXTI1_CallBack
- .bss.Global_EXTI2_CallBack
                 0x008001ca        0x2 ./MCAL/EXTI/Source/EXTI_Imp.o
-                0x008001ca                Global_EXTI2_CallBack
+                0x008001ca                Global_EXTI0_CallBack
+ .bss.Global_EXTI1_CallBack
+                0x008001cc        0x2 ./MCAL/EXTI/Source/EXTI_Imp.o
+                0x008001cc                Global_EXTI1_CallBack
+ .bss.Global_EXTI2_CallBack
+                0x008001ce        0x2 ./MCAL/EXTI/Source/EXTI_Imp.o
+                0x008001ce                Global_EXTI2_CallBack
  .bss.Global_ADC_CallBack
-                0x008001cc        0x2 ./MCAL/ADC/Source/ADC_Imp.o
-                0x008001cc                Global_ADC_CallBack
+                0x008001d0        0x2 ./MCAL/ADC/Source/ADC_Imp.o
+                0x008001d0                Global_ADC_CallBack
  .bss.current_ADC
-                0x008001ce        0x1 ./App/main.o
-                0x008001ce                current_ADC
+                0x008001d2        0x1 ./App/main.o
+                0x008001d2                current_ADC
  *(COMMON)
- COMMON         0x008001cf        0x8 ./App/main.o
-                0x008001cf                readings
-                0x008001d7                PROVIDE (__bss_end, .)
-                0x0000529e                __data_load_start = LOADADDR (.data)
-                0x00005404                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x008001d3        0xc ./App/main.o
+                0x008001d3                readings
+                0x008001df                PROVIDE (__bss_end, .)
+                0x00005360                __data_load_start = LOADADDR (.data)
+                0x000054ca                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008001d7        0x0
-                0x008001d7                PROVIDE (__noinit_start, .)
+.noinit         0x008001df        0x0
+                0x008001df                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x008001d7                PROVIDE (__noinit_end, .)
-                0x008001d7                _end = .
-                0x008001d7                PROVIDE (__heap_start, .)
+                0x008001df                PROVIDE (__noinit_end, .)
+                0x008001df                _end = .
+                0x008001df                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -689,7 +692,7 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x4350
+.stab           0x00000000     0x4404
  *(.stab)
  .stab          0x00000000      0x1c8 ./MCAL/GIE/Source/GIE_Imp.o
  .stab          0x000001c8      0x63c ./MCAL/EXTI/Source/EXTI_Imp.o
@@ -704,12 +707,12 @@ LOAD d:/hazim/01- embedded systems avr tools/01- imt sdk/imt_sdk_win_64/imt_sdk_
                                0x1518 (size before relaxing)
  .stab          0x00003c00      0x2a0 ./HAL/Keypad/Source/Keypad_Imp.o
                                 0x2ac (size before relaxing)
- .stab          0x00003ea0      0x4b0 ./App/main.o
-                                0x648 (size before relaxing)
+ .stab          0x00003ea0      0x564 ./App/main.o
+                                0x6fc (size before relaxing)
 
-.stabstr        0x00000000     0x1699
+.stabstr        0x00000000     0x16ab
  *(.stabstr)
- .stabstr       0x00000000     0x1699 ./MCAL/GIE/Source/GIE_Imp.o
+ .stabstr       0x00000000     0x16ab ./MCAL/GIE/Source/GIE_Imp.o
 
 .stab.excl
  *(.stab.excl)
